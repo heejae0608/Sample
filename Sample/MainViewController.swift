@@ -16,6 +16,12 @@ final class MainViewController: BaseViewController {
     return button
   }()
   
+  private let gcdButton: BaseButton = {
+    let button = BaseButton()
+    button.setTitle("GCD", for: .normal)
+    return button
+  }()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
   }
@@ -29,10 +35,24 @@ final class MainViewController: BaseViewController {
       make.top.equalTo(view.safeAreaLayoutGuide)
       make.leading.equalTo(view.safeAreaLayoutGuide).inset(20)
     }
+    
+    view.addSubview(gcdButton)
+    gcdButton.addTarget(self, action: #selector(actionGCDVC), for: .touchUpInside)
+    gcdButton.snp.makeConstraints { make in
+      make.width.equalTo(100)
+      make.height.equalTo(30)
+      make.top.equalTo(retainCycleButton.snp.bottom).offset(12)
+      make.leading.equalTo(view.safeAreaLayoutGuide).inset(20)
+    }
   }
   
   @objc private func actionPushRetainCycleVC() {
     let retainCycleVC = RetainCycleViewController()
     self.navigationController?.pushViewController(retainCycleVC, animated: true)
+  }
+  
+  @objc private func actionGCDVC() {
+    let gcdVC = GCDViewController()
+    self.navigationController?.pushViewController(gcdVC, animated: true)
   }
 }

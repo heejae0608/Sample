@@ -18,6 +18,9 @@
 		F4A7FFD929A1E1BF00496AB1 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A7FFD829A1E1BF00496AB1 /* BaseButton.swift */; };
 		F4A7FFDB29A1E8AD00496AB1 /* BaseAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A7FFDA29A1E8AD00496AB1 /* BaseAlertViewController.swift */; };
 		F4A7FFE429A20B7E00496AB1 /* DelegateRetainCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A7FFE329A20B7E00496AB1 /* DelegateRetainCycle.swift */; };
+		F4A7FFE629A2296F00496AB1 /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A7FFE529A2296F00496AB1 /* GCDViewController.swift */; };
+		F4A7FFE929A2363100496AB1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A7FFE829A2363100496AB1 /* APIService.swift */; };
+		F4A7FFEC29A2382000496AB1 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A7FFEB29A2382000496AB1 /* APIModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		F4A7FFD829A1E1BF00496AB1 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		F4A7FFDA29A1E8AD00496AB1 /* BaseAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAlertViewController.swift; sourceTree = "<group>"; };
 		F4A7FFE329A20B7E00496AB1 /* DelegateRetainCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateRetainCycle.swift; sourceTree = "<group>"; };
+		F4A7FFE529A2296F00496AB1 /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
+		F4A7FFE829A2363100496AB1 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F4A7FFEB29A2382000496AB1 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,8 @@
 		F4A7FFBA29A0B4D700496AB1 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				F4A7FFEA29A2380C00496AB1 /* Model */,
+				F4A7FFE729A2360800496AB1 /* Service */,
 				F4A7FFDE29A2061300496AB1 /* BaseViews */,
 				F4A7FFD329A1DCFF00496AB1 /* RetainCycle */,
 				F4A7FFBB29A0B4D700496AB1 /* AppDelegate.swift */,
@@ -95,6 +103,7 @@
 				F4A7FFC429A0B4D900496AB1 /* Assets.xcassets */,
 				F4A7FFC629A0B4D900496AB1 /* LaunchScreen.storyboard */,
 				F4A7FFC929A0B4D900496AB1 /* Info.plist */,
+				F4A7FFE529A2296F00496AB1 /* GCDViewController.swift */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -102,8 +111,8 @@
 		F4A7FFD329A1DCFF00496AB1 /* RetainCycle */ = {
 			isa = PBXGroup;
 			children = (
-				F4A7FFCF29A0B55900496AB1 /* TimerViewController.swift */,
 				F4A7FFD429A1DD2900496AB1 /* RetainCycleViewController.swift */,
+				F4A7FFCF29A0B55900496AB1 /* TimerViewController.swift */,
 				F4A7FFE329A20B7E00496AB1 /* DelegateRetainCycle.swift */,
 			);
 			path = RetainCycle;
@@ -117,6 +126,22 @@
 				F4A7FFDA29A1E8AD00496AB1 /* BaseAlertViewController.swift */,
 			);
 			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		F4A7FFE729A2360800496AB1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F4A7FFE829A2363100496AB1 /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F4A7FFEA29A2380C00496AB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4A7FFEB29A2382000496AB1 /* APIModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,10 +262,13 @@
 				F4A7FFD529A1DD2900496AB1 /* RetainCycleViewController.swift in Sources */,
 				F4A7FFE429A20B7E00496AB1 /* DelegateRetainCycle.swift in Sources */,
 				F4A7FFDB29A1E8AD00496AB1 /* BaseAlertViewController.swift in Sources */,
+				F4A7FFEC29A2382000496AB1 /* APIModel.swift in Sources */,
 				F4A7FFBC29A0B4D700496AB1 /* AppDelegate.swift in Sources */,
 				F4A7FFD229A1D1D500496AB1 /* MainViewController.swift in Sources */,
+				F4A7FFE929A2363100496AB1 /* APIService.swift in Sources */,
 				F4A7FFD929A1E1BF00496AB1 /* BaseButton.swift in Sources */,
 				F4A7FFD729A1DF3700496AB1 /* BaseViewController.swift in Sources */,
+				F4A7FFE629A2296F00496AB1 /* GCDViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
